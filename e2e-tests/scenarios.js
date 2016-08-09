@@ -37,8 +37,6 @@ describe('PhoneCat Application', function() {
           queryField.sendKeys('tablet'); //narrow dataset
 
           expect(getNames()).toEqual([
-              // 'Motorola XOOM\u2122 with Wi-Fi',
-              // 'MOTOROLA XOOM\u2122'
               'Motorola XOOM with Wi-Fi',
               'MOTOROLA XOOM'
           ]);
@@ -46,8 +44,6 @@ describe('PhoneCat Application', function() {
           nameOption.click();
 
           expect(getNames()).toEqual([
-              // 'MOTOROLA XOOM\u2122',
-              // 'Motorola XOOM\u2122 with Wi-Fi'
               'MOTOROLA XOOM',
               'Motorola XOOM with Wi-Fi'
           ]);
