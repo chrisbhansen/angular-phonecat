@@ -8,6 +8,8 @@
       <script src="bower_components/angular/angular.js"></script>
       <script src="bower_components/angular-route/angular-route.js"></script>
       <script src="app.module.js"></script>
+      <script src="core/core.module.js"></script>
+      <script src="core/checkmark/checkmark.filter.js"></script>
       <script src="app.config.js"></script>
       <script src="phone-list/phone-list.module.js"></script>
       <script src="phone-list/phone-list.component.js"></script>
@@ -16,5 +18,10 @@
   </head>
   <body>
     <div ng-view></div>
+    <div>{{'lower cap string' | uppercase}}</div>
+    <div>{{{foo: 'bar', baz: 42} | json}}</div>
+    <div>{{1459461289000 | date}}</div>
+    <div>{{1459461289000 | date: 'MM/dd/yyyy @ h:mma'}}</div>
+    <input ng-model="userInput" /> Uppercased: {{userInput | uppercase}}
   </body>
 </html>
